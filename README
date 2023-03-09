@@ -1,0 +1,18 @@
+
+comando para criar uma migration
+
+npm run knex -- migrate:make Nome-da-migration
+
+para executar uma migration apos inserir os campos é preciso usar o comando
+
+npm run knex -- migrate:latest
+
+
+
+e para desfazer a migration para poder ser editada é preciso usar o comando 
+
+npm run knex -- migrate:rollback
+
+## é importante que se eu criar a migration e outra pessoa executar o código eu preciso criar outra migration para não afetar o restante da aplciação.
+
+npm run knex -- migration:make add-session-id-to-todos
